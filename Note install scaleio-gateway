@@ -1,0 +1,15 @@
+Cấu hình file /opt/emc/scaleio/gateway/webapps/ROOT/WEB-INF/classes/gatewayUser.properties
+Cần sửa các tham số sau:
+# MDM IP list or MDM Virtual IP 
+mdm.ip.addresses= xxx.xxx.xxx.xxx ,xxx.xxx.xxx.xxx
+
+system.id=33f9652a28c87415
+
+
+
+
+- Đổi pass scaleio-gateway:
+/opt/emc/scaleio/gateway/bin/SioGWTool.sh --reset_password --password Test@123 --config_file /opt/emc/scaleio/gateway/webapps/ROOT/WEB-INF/classes/gatewayUser.properties
+
+- Cần vào trang gateway để approve certificate m
+
